@@ -38,7 +38,7 @@ export default function App() {
    
       <div style={{display:'flex', justifyContent:'center', alignItems:'center', minHeight:'100vh'}}>
         <Container>
-          <Card>
+          <Card className='mt-3 mb-3'>
             <Card.Body className='p-5'>
               <div className='img-group'>
                 <img src={logoKM} alt='' style={{}}></img>
