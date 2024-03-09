@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kumpulinTugas/static/css/main.681a7fc6.css",
-    "main.js": "/kumpulinTugas/static/js/main.c99e0658.js",
+    "main.js": "/kumpulinTugas/static/js/main.96e1d70b.js",
     "static/js/453.9d12af13.chunk.js": "/kumpulinTugas/static/js/453.9d12af13.chunk.js",
     "static/media/hero3.png": "/kumpulinTugas/static/media/hero3.50df809469a02bde95f1.png",
     "static/media/KM.png": "/kumpulinTugas/static/media/KM.dafe007bdf59abb7f8e3.png",
@@ -9,11 +9,11 @@
     "static/media/ICON.png": "/kumpulinTugas/static/media/ICON.3f3966bcd74216e2205b.png",
     "index.html": "/kumpulinTugas/index.html",
     "main.681a7fc6.css.map": "/kumpulinTugas/static/css/main.681a7fc6.css.map",
-    "main.c99e0658.js.map": "/kumpulinTugas/static/js/main.c99e0658.js.map",
+    "main.96e1d70b.js.map": "/kumpulinTugas/static/js/main.96e1d70b.js.map",
     "453.9d12af13.chunk.js.map": "/kumpulinTugas/static/js/453.9d12af13.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.681a7fc6.css",
-    "static/js/main.c99e0658.js"
+    "static/js/main.96e1d70b.js"
   ]
 }
