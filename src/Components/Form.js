@@ -8,6 +8,7 @@ import logoKM from '../Images/KM.png';
 import logoUnmul from '../Images/unmul.png';
 import logoPraktikum from '../Images/ICON.png';
 import { SuccessNotification, ErrorNotification } from './Notification';
+import Footer from './Footer';
 
 export default function Form() {
   const [submissionSuccess, setSubmissionSuccess] = useState(false);
@@ -65,7 +66,7 @@ export default function Form() {
                         </div>
                         <div className='col-lg-6'>
                             <h3>kumpulin<span>Tugas</span></h3>
-                            <p className='text-muted'>Developed by Elxixau</p>
+                            <p className='text-muted'>By Asprak Pemrograman Visual</p>
                             <div>
                             {submissionSuccess && (
                                 <SuccessNotification/>
@@ -123,12 +124,9 @@ export default function Form() {
                     </div>
                 </Card.Body>
             </Card>
-            <footer className="footer">
-                <div className="container text-center p-2">
-                    <span className="text-muted">&copy; {new Date().getFullYear()} KumpulinTugas_Visual Programming </span>
-                </div>
-            </footer>
+            <Footer/>
         </Container>
       </div>
+      
   );
 }
