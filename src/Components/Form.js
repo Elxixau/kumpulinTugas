@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import "../Style/Form.css"
+import "../Style/Form.css";
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
@@ -93,12 +94,17 @@ export default function Form() {
                                 type="text" />
                                 </div>
                                 <div className="form-group mb-4">
-                                <select className="form-control mt-2 border-0 border-bottom" id="tugas_ke" placeholder="Tugas Ke-" name="tugas_ke">
-                                    <option value="Tugas 1">Tugas 1</option>
-                                    <option value="Tugas 2">Tugas 2</option>
-                                    <option value="Tugas 3">Tugas 3</option>
-                                    {/* Tambahkan opsi lainnya sesuai kebutuhan */}
-                                </select>
+                                    <select className="form-control mt-2 border-0 border-bottom" id="tugas_ke" placeholder="Tugas Ke-" name="tugas_ke">
+                                        <option value="Tugas 1">Tugas 1</option>
+                                        <option value="Tugas 2">Tugas 2</option>
+                                        <option value="Tugas 3">Tugas 3</option>
+                                        <option value="Tugas 4">Tugas 4</option>
+                                        <option value="Tugas 5">Tugas 5</option>
+                                        <option value="Tugas 6">Tugas 6</option>
+                                        <option value="Tugas 7">Tugas 7</option>
+                                        <option value="Tugas 8">Tugas 8</option>
+                                        {/* Tambahkan opsi lainnya sesuai kebutuhan */}
+                                    </select>
                                 </div>
                                 <div className="form-group mb-4">
                                 <input 
@@ -114,15 +120,20 @@ export default function Form() {
                                 value={new Date().toLocaleString()} />
                                 <div className='mt-4' style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
                                     <button className="btn btn-primary " type="submit">Submit</button>
-                                    <div className='text-muted ' style={{fontSize:'12px', marginLeft:'20px'}}>
+                                    <div style={{fontSize:'10px', marginLeft:'20px'}}>
                                         "Cukup klik satu kali tombol submit dan tunggu hingga notifikasi muncul"
                                     </div>
                                 </div>
+                                
                             </form>
                             </div>
                         </div>
                     </div>
+                    <div className='d-flex justify-content-center mt-4'>                    
+                        <Link to="/recapTugas" style={{  color:'black' }}>Lihat Hasil Pengumpulan</Link>
+                    </div>
                 </Card.Body>
+                
             </Card>
             <Footer/>
         </Container>

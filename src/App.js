@@ -1,11 +1,11 @@
 import React from 'react';
 import './Style/App.css';
-import Form from './Components/Form';
+import AppRoutes from './Routes';
 
 function App() {
   return (
     <div className="App">
-    <Form/>
+      <AppRoutes/>
     </div>
   );
 }
