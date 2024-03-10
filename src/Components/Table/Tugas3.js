@@ -7,13 +7,14 @@ function TugasKetiga() {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage] = useState(10);
     const [searchTerm, setSearchTerm] = useState('');
+    const [totalData, setTotalData] = useState(0);
 
     useEffect(() => {
         readGoogleSheet();
     }, []);
 
     const readGoogleSheet = () => {
-        fetch("https://sheetdb.io/api/v1/lxx4i0lfmhbg8")
+        fetch("https://sheet.best/api/sheets/06e48920-0b01-4467-8712-40a119aaa360")
             .then((response) => response.json())
             .then((data) => {
                 // Filter data to only include entries with 'Tugas 1' in 'tugas_ke' column
@@ -22,6 +23,7 @@ function TugasKetiga() {
                 );
                 setData(filteredData);
                 setFilteredData(filteredData); // This line might be redundant now
+                setTotalData(filteredData.length);
             })
             .catch((error) => console.error("Error fetching data:", error));
     };
@@ -46,11 +48,15 @@ function TugasKetiga() {
             item.nama.toLowerCase().includes(term.toLowerCase())
         );
         setFilteredData(filtered);
+        setTotalData(filtered.length);
     };
 
     return (
         <div>
-            <h4 className='mb-4'>Rekap pengumpulan Tugas 3</h4>
+            <div className='title' style={{display:'flex', justifyContent:'space-between'}}>
+                <h4 className='mb-4'>Rekap pengumpulan Tugas 3</h4>
+                <p className='text-muted'>Telah Terkumpul : {totalData}</p>
+            </div>
             <Form.Group controlId="searchTerm" className='mb-3'>
                 <Form.Control
                     type="text"
